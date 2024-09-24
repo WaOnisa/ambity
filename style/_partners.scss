@@ -1,0 +1,22 @@
+.partner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    gap: 80px;
+    div{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        gap: 180px;
+        img:first-child{
+            width: 288px;
+            height: 58px;
+        }
+        img:last-child{
+            width: 79px;
+            height: 58px;
+        }
+    }
+}

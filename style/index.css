@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Rising Sun";
+  src: url(./fonts/RisingSun/RisingSun-Medium.ttf);
+}
+@font-face {
+  font-family: "Manrope";
+  src: url(./fonts/Manrope/Manrope.ttf);
+}
+.blockForm form .redButton, footer .redButton, .quests .redButtonBlock .redButton {
+  border: 4px solid #FF4A40;
+  background-color: #ffffff;
+  font-family: "Rising Sun";
+  font-weight: 700;
+  font-size: 18px;
+  color: #FF4A40;
+  padding: 12px 20px 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Rising Sun";
+}
+
+.title {
+  font-weight: 700;
+  font-size: 54px;
+  display: flex;
+  justify-content: center;
+}
+
+.quest .questTitle {
+  display: grid;
+  grid-template-columns: auto 50px;
+  border-bottom: 1px solid #575757;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.quest button {
+  color: #FF4A40;
+  background: #ffffff;
+  width: 41px;
+  height: 41px;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+.quest button span {
+  position: absolute;
+  transition: 300ms;
+  background: #FF4A40;
+  border-radius: 2px;
+}
+.quest button span:first-child {
+  top: 25%;
+  bottom: 25%;
+  width: 10%;
+  left: 45%;
+}
+.quest button span:last-child {
+  left: 25%;
+  right: 25%;
+  height: 10%;
+  top: 45%;
+}
+.quest .act-btn1 {
+  transform: rotate(90deg);
+  background: #575757;
+}
+.quest .act-btn2 {
+  left: 50%;
+  right: 50%;
+  background: #575757;
+  transform: rotate(180deg);
+}
+.quest p {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 26px;
+}
+.quest .answer {
+  display: flex;
+  justify-content: flex-start;
+  width: 50vw;
+}
+.quest .hidden {
+  display: none;
+}
+.quest ul {
+  padding: 16px;
+}
+.quest ul li {
+  font-family: "Rising Sun";
+  font-weight: 600;
+  font-size: 18px;
+}
+.quest ul li span {
+  font-family: "Rising Sun";
+  font-weight: 500;
+}
+
+.quests {
+  margin-left: 185px;
+  margin-right: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 85px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.quests .redButtonBlock {
+  display: flex;
+  justify-content: center;
+}
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  gap: 80px;
+}
+.partner div {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  gap: 180px;
+}
+.partner div img:first-child {
+  width: 288px;
+  height: 58px;
+}
+.partner div img:last-child {
+  width: 79px;
+  height: 58px;
+}
+
+footer {
+  padding-top: 75px;
+  display: grid;
+  grid-template-columns: 462px 306px;
+  grid-template-rows: 193px;
+  gap: 162px;
+  justify-content: center;
+}
+footer div:first-child {
+  display: grid;
+  gap: 30px;
+  justify-items: start;
+}
+footer .footInf {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer h1 {
+  font-family: "Rising Sun";
+  font-weight: 600;
+  font-size: 42px;
+}
+footer h2 {
+  font-family: "Rising Sun";
+  font-weight: 500;
+  font-size: 32px;
+}
+footer h3 {
+  font-family: "Rising Sun";
+  font-weight: 500;
+  font-size: 24px;
+}
+footer p {
+  font-family: "Rising Sun";
+  font-size: 18px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 306px;
+  grid-template-rows: repeat(4, auto);
+  gap: 16px;
+  justify-items: start;
+}
+
+.contactsBtn button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.contactsBtn {
+  grid-template-columns: repeat(2, auto);
+  display: grid;
+  gap: 20px;
+}
+
+.blockForm {
+  background: url("../img/pic.png") no-repeat center center;
+  background-size: cover;
+  padding-bottom: 110px;
+  padding-top: 110px;
+  display: grid;
+  grid-template-columns: repeat(2, 540px);
+  gap: 134px;
+  justify-content: space-evenly;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.blockForm div {
+  display: grid;
+  gap: 20px;
+}
+.blockForm div h1 {
+  font-family: "Rising Sun";
+  font-weight: 600;
+  font-size: 54px;
+}
+.blockForm div p {
+  font-family: "Rising Sun";
+  font-weight: 500;
+  font-size: 18px;
+}
+.blockForm form {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr 0.5fr 1.5fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+  grid-auto-flow: row;
+}
+.blockForm form input {
+  font-family: "Rising Sun";
+  font-weight: 500;
+  font-size: 18px;
+  color: #939393;
+  border: 1px solid #999999;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  grid-column: span 2;
+}
+.blockForm form .details {
+  grid-column: span 4;
+  font-family: "Rising Sun";
+  font-weight: 500;
+  font-size: 18px;
+  color: #939393;
+  border: 1px solid #999999;
+  border: 1px solid #999999;
+  padding-left: 15px;
+  padding-top: 10px;
+  resize: none;
+}
+.blockForm form p {
+  font-family: "Rising Sun";
+  font-weight: 500;
+  font-size: 12px;
+  grid-column: span 3;
+  color: #939393;
+}
+.blockForm form .redButton {
+  justify-self: end;
+  padding-left: 30px;
+  padding-right: 30px;
+}/*# sourceMappingURL=index.css.map */

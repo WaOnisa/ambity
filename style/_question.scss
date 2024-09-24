@@ -1,0 +1,97 @@
+.quest {
+    .questTitle {
+        display: grid;
+        grid-template-columns: auto 50px;
+        border-bottom: 1px solid $colorGrayDark;
+        padding-top: $indent; 
+        padding-bottom: $indent;
+    }
+    button{
+        color: $colorRed;
+        background: $colorWhite;
+        width: 41px;
+        height: 41px;
+        border: 0;
+        position: relative;
+        cursor: pointer;
+        span {
+            position: absolute;
+            transition: 300ms;
+            background: $colorRed;
+            border-radius: 2px;
+        }
+        span:first-child {
+            top: 25%;
+            bottom: 25%;
+            width: 10%;
+            left: 45%;
+        }
+        span:last-child {
+            left: 25%;
+            right: 25%;
+            height: 10%;
+            top: 45%;
+        }
+        }
+        .act-btn1 {
+            transform: rotate(90deg);
+            background: $colorGrayDark;
+        }
+        .act-btn2 {
+        left: 50%;
+        right: 50%;
+        background: $colorGrayDark;
+        transform: rotate(180deg);
+        }
+    p{
+        font: {
+            family: 'Manrope';
+            weight: 600;
+            size: 26px;
+        }
+    }
+    .answer{
+        display: flex;
+        justify-content: flex-start;
+        width:50vw;
+    }
+    .hidden{
+        display: none;
+    }    
+
+    ul{
+        padding: $indent;
+        
+        li{
+            font: {
+                family: 'Rising Sun';
+                weight: 600;
+                size: 18px;
+            }
+            span{
+                font: {
+                    family: 'Rising Sun';
+                    weight: 500;
+                }
+            }
+        }
+    }
+}
+.quests {
+    margin-left: 185px;
+    margin-right: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 85px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    .redButtonBlock{
+        display: flex;
+        justify-content: center;
+        .redButton{
+            @extend %buttons !optional;
+        }  
+}
+}
+
