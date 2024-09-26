@@ -1,85 +1,5 @@
-.quest {
-    .questTitle {
-        display: grid;
-        grid-template-columns: auto 50px;
-        border-bottom: 1px solid $colorGrayDark;
-        padding-top: $indent; 
-        padding-bottom: $indent;
-    }
-    button{
-        color: $colorRed;
-        background: $colorWhite;
-        width: 41px;
-        height: 41px;
-        border: 0;
-        position: relative;
-        cursor: pointer;
-        span {
-            position: absolute;
-            transition: 300ms;
-            background: $colorRed;
-            border-radius: 2px;
-        }
-        span:first-child {
-            top: 25%;
-            bottom: 25%;
-            width: 10%;
-            left: 45%;
-        }
-        span:last-child {
-            left: 25%;
-            right: 25%;
-            height: 10%;
-            top: 45%;
-        }
-        }
-        .act-btn1 {
-            transform: rotate(90deg);
-            background: $colorGrayDark;
-        }
-        .act-btn2 {
-        left: 50%;
-        right: 50%;
-        background: $colorGrayDark;
-        transform: rotate(180deg);
-        }
-    p{
-        font: {
-            family: 'Manrope';
-            weight: 600;
-            size: 26px;
-        }
-    }
-    .answer{
-        display: flex;
-        justify-content: flex-start;
-        width:50vw;
-    }
-    .hidden{
-        display: none;
-    }    
 
-    ul{
-        padding: $indent;
-        
-        li{
-            font: {
-                family: 'Rising Sun';
-                weight: 600;
-                size: 18px;
-            }
-            span{
-                font: {
-                    family: 'Rising Sun';
-                    weight: 500;
-                }
-            }
-        }
-    }
-}
 .quests {
-    margin-left: 185px;
-    margin-right: 185px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,4 +14,42 @@
         }  
 }
 }
+.accordion {
+    --bs-accordion-border-color: black;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-active-bg: none;
+    --bs-accordion-active-color: black;
+    --bs-accordion-btn-icon-width: 50px;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.543 23.5H36.4596' stroke='%23FF4A40' stroke-width='3.42857' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24.5 11.542V35.4587' stroke='%23FF4A40' stroke-width='3.42857' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.543 23.5H36.4596' stroke='%231F1F1F' stroke-width='3.42857' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    .accordion-body{
+        display: flex;
+        justify-content: flex-start;
+        width:55vw;
+    }
+    button{
+        font: {
+                family: 'Rising Sun';
+                weight: 600;
+                size: 26px;
+            }
+    }
+    ul{
+        padding: $indent;
+        li{
+            font: {
+                family: 'Rising Sun';
+                weight: 600;
+                size: 18px;
+            }
+            span{
+                font: {
+                    family: 'Rising Sun';
+                    weight: 500;
+                }
+            }
+        }
+    }
 
+}

@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link href="./style/index.css" rel="stylesheet">
     <title>practice</title>
   </head>
@@ -11,151 +12,145 @@
     <main>
       <section class="quests" id="quests">
         <h1 class='title'>Часто задаваемые вопросы</h1>
-			<div>
-			<div class='quest'>
-          		<div class='questTitle'>
-					<p>Сколько по времени займет запуск проекта?</p>
-					<div>
-              			<button id="questBtn" onclick="hideBlock('questText1','spanBtn11','spanBtn21')">
-							<span id="spanBtn11"></span>
-							<span id="spanBtn21"></span>
-              			</button>
-            		</div>
-            		<div id="questText1" class="answer hidden">
-						<ul>
-							<li>
-								<span>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-									ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-									aliquip ex ea commodo consequat. Duis aute irure dolor in
-									reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-									pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-									culpa qui officia deserunt mollit anim id est laborum.
-								</span>
-							</li>
-						</ul>
+			<div class="col-md-10 offset-md-1">
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+								Сколько по времени займет запуск проекта?
+							</button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<ul>
+									<li>
+										<span>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+											eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+											ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+											aliquip ex ea commodo consequat. Duis aute irure dolor in
+											reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+											culpa qui officia deserunt mollit anim id est laborum.
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+								Каким образом это поможет моему бизнесу?
+							</button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<ul>
+									<li>
+										Удобство заказа:
+										<span>
+											Клиенты могут легко просматривать меню, делать заказы и оплачивать
+											их в любое время и из любого места, что увеличивает вероятность
+											повторных покупок
+										</span>
+									</li>
+									<li>
+										Увеличение охвата:
+										<span>
+											Онлайн-платформы позволяют привлечь больше клиентов, включая тех,
+											кто предпочитает заказывать еду с помощью мобильных устройств
+										</span>
+									</li>
+									<li>
+										Маркетинг и продвижение:
+										<span>
+											Сайт и приложение могут использоваться для проведения акций, скидок
+											и программ лояльности, что способствует привлечению новых клиентов и
+											удержанию существующих
+										</span>
+									</li>
+									<li>
+										Отслеживание заказов:
+										<span>
+											Возможность отслеживания статуса заказа в реальном времени повышает
+											уровень доверия и удовлетворенности клиентов
+										</span>
+									</li>
+									<li>
+										Автоматизация процессов:
+										<span>
+											Система управления заказами может сократить время обработки заказов
+											и снизить вероятность ошибок
+										</span>
+									</li>
+									<li>
+										Аналитика и отчетность:
+										<span>
+											Возможность анализа данных о продажах и поведении клиентов помогает
+											принимать обоснованные бизнес-решения
+										</span>
+									</li>
+									<li>
+										Конкурентное преимущество:
+										<span>
+											Наличие современного сайта и приложения может выделить ресторан
+											среди конкурентов, особенно если они не используют такие технологии
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+								Какие сроки на разработку программного продукта под мой бренд?
+							</button>
+						</h2>
+						<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+							<ul>
+									<li>
+										<span>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+											eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+											ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+											aliquip ex ea commodo consequat. Duis aute irure dolor in
+											reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+											culpa qui officia deserunt mollit anim id est laborum.
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+								Какие сроки на разработку программного продукта под мой бренд?
+							</button>
+						</h2>
+						<div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+							<ul>
+									<li>
+										<span>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+											eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+											ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+											aliquip ex ea commodo consequat. Duis aute irure dolor in
+											reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+											pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+											culpa qui officia deserunt mollit anim id est laborum.
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class='quest'>
-          		<div class='questTitle'>
-					<p>Каким образом это поможет моему бизнесу?</p>
-					<div>
-              			<button id="questBtn" onclick="hideBlock('questText2','spanBtn12','spanBtn22')">
-							<span id="spanBtn12"></span>
-							<span id="spanBtn22"></span>
-              			</button>
-            		</div>
-            		<div id="questText2" class="answer hidden">
-						<ul>
-							<li>
-								Удобство заказа:
-								<span>
-									Клиенты могут легко просматривать меню, делать заказы и оплачивать
-									их в любое время и из любого места, что увеличивает вероятность
-									повторных покупок
-								</span>
-							</li>
-							<li>
-								Увеличение охвата:
-								<span>
-									Онлайн-платформы позволяют привлечь больше клиентов, включая тех,
-									кто предпочитает заказывать еду с помощью мобильных устройств
-								</span>
-							</li>
-							<li>
-								Маркетинг и продвижение:
-								<span>
-									Сайт и приложение могут использоваться для проведения акций, скидок
-									и программ лояльности, что способствует привлечению новых клиентов и
-									удержанию существующих
-								</span>
-							</li>
-							<li>
-								Отслеживание заказов:
-								<span>
-									Возможность отслеживания статуса заказа в реальном времени повышает
-									уровень доверия и удовлетворенности клиентов
-								</span>
-							</li>
-							<li>
-								Автоматизация процессов:
-								<span>
-									Система управления заказами может сократить время обработки заказов
-									и снизить вероятность ошибок
-								</span>
-							</li>
-							<li>
-								Аналитика и отчетность:
-								<span>
-									Возможность анализа данных о продажах и поведении клиентов помогает
-									принимать обоснованные бизнес-решения
-								</span>
-							</li>
-							<li>
-								Конкурентное преимущество:
-								<span>
-									Наличие современного сайта и приложения может выделить ресторан
-									среди конкурентов, особенно если они не используют такие технологии
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class='quest'>
-          		<div class='questTitle'>
-					<p>Какие сроки на разработку программного продукта под мой бренд?</p>
-					<div>
-              			<button id="questBtn" onclick="hideBlock('questText3','spanBtn13','spanBtn23')">
-							<span id="spanBtn13"></span>
-							<span id="spanBtn23"></span>
-              			</button>
-            		</div>
-            		<div id="questText3" class="answer hidden">
-						<ul>
-							<li>
-								<span>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-									ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-									aliquip ex ea commodo consequat. Duis aute irure dolor in
-									reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-									pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-									culpa qui officia deserunt mollit anim id est laborum.
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class='quest'>
-          		<div class='questTitle'>
-					<p>У меня уже есть сайт/ мобильное приложение, можно ли запустить по новой?</p>
-					<div>
-              			<button id="questBtn" onclick="hideBlock('questText4','spanBtn14','spanBtn24')">
-							<span id="spanBtn14"></span>
-							<span id="spanBtn24"></span>
-              			</button>
-            		</div>
-            		<div id="questText4" class="answer hidden">
-						<ul>
-							<li>
-								<span>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-									ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-									aliquip ex ea commodo consequat. Duis aute irure dolor in
-									reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-									pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-									culpa qui officia deserunt mollit anim id est laborum.
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
 			</div>
 			<div class='redButtonBlock'>
 				<button class='redButton'>
@@ -196,24 +191,26 @@
       </section>
       </main>
       <footer id="footer">
-        <div>
-			<h1>Планируете проект?</h1>
-			<h2>Давайте запустим его вместе</h2>
-			<button class='redButton'>
-				Начать работу <img src="./img/Arrow.png" />
-			</button>
-		</div>
-		<div class='contacts'>
-			<h3>+7 (347) 2-131-131</h3>
-			<h3>info@ambity.ru</h3>
-			<h3>г. Уфа, ул. Пр. Октября, д. 2</h3>
-			<div class='contactsBtn'>
-				<button>
-					<img src="./img/vk.png" />
+        <div class="footContacts">
+			<div>
+				<h1>Планируете проект?</h1>
+				<h2>Давайте запустим его вместе</h2>
+				<button class='redButton'>
+					Начать работу <img src="./img/Arrow.png" />
 				</button>
-				<button>
-					<img src="img/tg.png" />
-				</button>
+			</div>
+			<div class='contacts'>
+				<h3>+7 (347) 2-131-131</h3>
+				<h3>info@ambity.ru</h3>
+				<h3>г. Уфа, ул. Пр. Октября, д. 2</h3>
+				<div class='contactsBtn'>
+					<button>
+						<img src="./img/vk.png" />
+					</button>
+					<button>
+						<img src="img/tg.png" />
+					</button>
+				</div>
 			</div>
 		</div>
 		<div class='footInf'>
@@ -222,6 +219,7 @@
 			<p>Политика конфиденциальности</p>
 		</div>
       </footer>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	  <script src="./index.js"></script>
   </body>
 </html>

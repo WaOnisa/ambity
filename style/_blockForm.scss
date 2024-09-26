@@ -39,7 +39,7 @@
                 weight: 500;
                 size: 18px;
             }
-            color: $colorGrayLight;
+            text-overflow: $colorGrayLight2;
             border: 1px solid $colorGrayLight2;
             padding-left: 15px;
             padding-top: 10px;
@@ -53,8 +53,6 @@
                 weight: 500;
                 size: 18px;
             }
-            color: $colorGrayLight;
-            border: 1px solid $colorGrayLight2;
             border: 1px solid $colorGrayLight2;
             padding-left: 15px;
             padding-top: 10px;
@@ -76,4 +74,4 @@
             padding-right: 30px;
         }
     }
-}   
+}  

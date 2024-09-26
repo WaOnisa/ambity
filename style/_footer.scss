@@ -1,20 +1,27 @@
 footer{
     padding-top: 75px;
-    display: grid;
-    grid-template-columns: 462px 306px;
-    grid-template-rows: 193px ;
-    gap: 162px;
-    justify-content: center;
-    div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    .footContacts{
+        display: grid;
+        grid-template-columns: 462px 306px;
+        grid-template-rows: 193px;
+        gap: 162px;
+        justify-content: center;
+        
+        div:first-child{
         display: grid;
         gap: 30px;
         justify-items: start;
     }
+    }
     .footInf{
-        grid-column: span 2;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 120px;
     }
     h1{
         font: {
