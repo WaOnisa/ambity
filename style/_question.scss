@@ -15,6 +15,7 @@
 }
 }
 .accordion {
+    --bs-accordion-btn-padding-x: 0px;
     --bs-accordion-border-color: black;
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-btn-focus-border-color: none;
@@ -36,17 +37,18 @@
             }
     }
     ul{
-        padding: $indent;
+        padding-left: 0px;
+        margin-bottom: 0px;
         li{
             font: {
                 family: 'Rising Sun';
-                weight: 600;
+                weight: 500;
                 size: 18px;
             }
             span{
                 font: {
                     family: 'Rising Sun';
-                    weight: 500;
+                    weight: 600;
                 }
             }
         }

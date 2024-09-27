@@ -1,18 +1,18 @@
 .blockForm{
     background: url("../img/pic.png") no-repeat center center;
     background-size: cover;
-    padding-bottom: 110px;
-    padding-top: 110px;
-    display: grid;
-    grid-template-columns: repeat(2, 540px);
-    gap: 134px;
-    justify-content: space-evenly;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
     margin-top: 75px;
     margin-bottom: 75px;
-    div { 
-        display: grid;
+    div:first-child { 
+        display: flex;
         gap: 20px;  
+        flex-direction: column;
         h1{
+            margin-bottom: 0px;
             font: {
                 family: 'Rising Sun';
                 weight: 600;
@@ -25,14 +25,14 @@
                 weight: 500;
                 size: 18px;
             }  
+            margin-bottom: 0;
         }
     }
     form{
-        display: grid;
-        gap: 18px;
-        grid-template-columns: 1fr 1fr 0.5fr 1.5fr; 
-        grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr; 
-        grid-auto-flow: row;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
         input{
             font: {
                 family: 'Rising Sun';
@@ -44,10 +44,19 @@
             padding-left: 15px;
             padding-top: 10px;
             padding-bottom: 10px;
-            grid-column: span 2;
+            padding-right: 7px;
+        }
+        .name .phone {
+            order: 1;
+            flex-grow: 1;
+        }
+        .company .email{
+            order: 2;
+            flex-grow: 1;
         }
         .details{
-            grid-column: span 4;
+            order: 3;
+            flex-grow: 2;
             font: {
                 family: 'Rising Sun';
                 weight: 500;
@@ -56,22 +65,35 @@
             border: 1px solid $colorGrayLight2;
             padding-left: 15px;
             padding-top: 10px;
+            padding-right: 7px;
             resize: none;
         }
-        p{
-            font: {
-                family: 'Rising Sun';
-                weight: 500;
-                size: 12px;
+        .formBtn{
+            order: 4;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            gap: 30px;
+            p{
+                font: {
+                    family: 'Rising Sun';
+                    weight: 500;
+                    size: 12px;
+                }
+                margin-bottom: 0;
+                color: $colorGrayLight;
             }
-            grid-column: span 3;
-            color: $colorGrayLight;
-        }
-        .redButton{
-            @extend %buttons;
-            justify-self: end;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
+            .redButton{
+                @extend %buttons;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }    
     }
 }  
+
+
+.row>* {
+    padding-right: 0;
+    padding-left: 0;
+}
