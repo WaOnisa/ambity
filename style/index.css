@@ -119,11 +119,13 @@ footer {
   padding-top: 75px;
   display: flex;
   gap: 120px;
+  justify-content: space-around;
 }
 footer .footContacts {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 150px;
 }
 footer .footContacts div:first-child {
   display: flex;
@@ -183,6 +185,9 @@ footer p {
 }
 
 .footerBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 100px;
 }
 
@@ -214,10 +219,11 @@ footer p {
   margin-bottom: 0;
 }
 .blockForm form {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+  grid-auto-flow: row;
 }
 .blockForm form input {
   font-family: "Rising Sun";
@@ -230,17 +236,7 @@ footer p {
   padding-bottom: 10px;
   padding-right: 7px;
 }
-.blockForm form .name .phone {
-  order: 1;
-  flex-grow: 1;
-}
-.blockForm form .company .email {
-  order: 2;
-  flex-grow: 1;
-}
 .blockForm form .details {
-  order: 3;
-  flex-grow: 2;
   font-family: "Rising Sun";
   font-weight: 500;
   font-size: 18px;
@@ -249,6 +245,7 @@ footer p {
   padding-top: 10px;
   padding-right: 7px;
   resize: none;
+  grid-column: span 2;
 }
 .blockForm form .formBtn {
   order: 4;
@@ -256,6 +253,7 @@ footer p {
   flex-direction: row;
   align-items: flex-end;
   gap: 30px;
+  grid-column: span 2;
 }
 .blockForm form .formBtn p {
   font-family: "Rising Sun";

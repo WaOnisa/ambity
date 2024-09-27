@@ -2,16 +2,14 @@ footer{
     padding-top: 75px;
     display: flex;
     gap: 120px;
+    justify-content: space-around;
     .footContacts{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 150px;
 
-        // display: grid;
-        // grid-template-columns: 462px 306px;
-        // grid-template-rows: 193px;
-        // gap: 162px;
-        // justify-content: center;
+      
         
         div:first-child{
         display: flex;
@@ -81,5 +79,8 @@ footer{
     gap: 20px;
 }
 .footerBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 100px;
 }
