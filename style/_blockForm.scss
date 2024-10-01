@@ -29,11 +29,16 @@
         }
     }
     form{
-        display: grid;
+        display: flex;
+        flex-flow: column wrap;
+        width: 500px;
         gap: 18px;
-        grid-template-columns: repeat(2, 250px); 
-        grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr; 
-        grid-auto-flow: row;
+        flex-direction: row;
+        // display: grid;
+        // gap: 18px;
+        // grid-template-columns: repeat(2, 250px); 
+        // grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr; 
+        // grid-auto-flow: row;
         input{
             font: {
                 family: 'Rising Sun';
@@ -46,6 +51,7 @@
             padding-top: 10px;
             padding-bottom: 10px;
             padding-right: 7px;
+            flex-grow: 1;
         }
         .details{
             font: {
@@ -58,7 +64,7 @@
             padding-top: 10px;
             padding-right: 7px;
             resize: none;
-            grid-column: span 2;
+            flex-grow: 2;
         }
         .formBtn{
             order: 4;

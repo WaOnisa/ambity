@@ -219,11 +219,11 @@ footer p {
   margin-bottom: 0;
 }
 .blockForm form {
-  display: grid;
+  display: flex;
+  flex-flow: column wrap;
+  width: 500px;
   gap: 18px;
-  grid-template-columns: repeat(2, 250px);
-  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
-  grid-auto-flow: row;
+  flex-direction: row;
 }
 .blockForm form input {
   font-family: "Rising Sun";
@@ -235,6 +235,7 @@ footer p {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 7px;
+  flex-grow: 1;
 }
 .blockForm form .details {
   font-family: "Rising Sun";
@@ -245,7 +246,7 @@ footer p {
   padding-top: 10px;
   padding-right: 7px;
   resize: none;
-  grid-column: span 2;
+  flex-grow: 2;
 }
 .blockForm form .formBtn {
   order: 4;
