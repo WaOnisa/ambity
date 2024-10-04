@@ -68,7 +68,7 @@ footer{
     gap: 16px;
     justify-items: start;
 }
-.contactsBtn button{
+.contactsBtn a{
     background: none;
     border: none;
     cursor: pointer;
@@ -83,4 +83,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     gap: 100px;
+}
+h1, h2, h3, p {
+    margin-bottom: 0;
 }

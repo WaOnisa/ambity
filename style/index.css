@@ -13,7 +13,7 @@
   font-weight: 700;
   font-size: 18px;
   color: #FF4A40;
-  padding: 12px 20px 12px 20px;
+  padding: 6px 16px 6px 16px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -45,8 +45,7 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 85px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding: 75px 60px 75px 60px;
 }
 .quests .redButtonBlock {
   display: flex;
@@ -172,7 +171,7 @@ footer p {
   justify-items: start;
 }
 
-.contactsBtn button {
+.contactsBtn a {
   background: none;
   border: none;
   cursor: pointer;
@@ -191,15 +190,26 @@ footer p {
   gap: 100px;
 }
 
-.blockForm {
+h1, h2, h3, p {
+  margin-bottom: 0;
+}
+
+.blockForms {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.imgBack {
   background: url("../img/pic.png") no-repeat center center;
   background-size: cover;
+}
+
+.blockForm {
   padding-bottom: 100px;
   padding-top: 100px;
   display: flex;
   flex-direction: row;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  justify-content: space-between;
 }
 .blockForm div:first-child {
   display: flex;
@@ -222,31 +232,42 @@ footer p {
   display: flex;
   flex-flow: column wrap;
   width: 500px;
-  gap: 18px;
+  gap: 30px;
   flex-direction: row;
 }
 .blockForm form input {
   font-family: "Rising Sun";
   font-weight: 500;
   font-size: 18px;
-  text-overflow: #999999;
-  border: 1px solid #999999;
+  border: 1px solid #c6c6c6;
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 7px;
   flex-grow: 1;
 }
+.blockForm form input::-moz-placeholder {
+  color: #939393;
+}
+.blockForm form input::placeholder {
+  color: #939393;
+}
 .blockForm form .details {
   font-family: "Rising Sun";
   font-weight: 500;
   font-size: 18px;
-  border: 1px solid #999999;
+  border: 1px solid #c6c6c6;
   padding-left: 15px;
   padding-top: 10px;
   padding-right: 7px;
   resize: none;
   flex-grow: 2;
+}
+.blockForm form .details::-moz-placeholder {
+  color: #939393;
+}
+.blockForm form .details::placeholder {
+  color: #939393;
 }
 .blockForm form .formBtn {
   order: 4;

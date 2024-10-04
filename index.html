@@ -10,9 +10,9 @@
   </head>
   <body>
     <main>
-      <section class="quests" id="quests">
+      <section class="quests container" id="quests">
         <h1 class='title'>Часто задаваемые вопросы</h1>
-			<div class="container">
+			<div>
 				<div class="accordion accordion-flush" id="accordionFlushExample">
 					<div class="accordion-item">
 						<h2 class="accordion-header">
@@ -137,36 +137,40 @@
 					Задать вопрос <img src="img/Arrow.png" />
 				</button>
 			</div>
-      </section>
-      	<section class="blockForm justify-content-evenly" id="blockForm">
-			<div>
-				<h1>Рассчитать <br> стоимость</h1>
-				<p>
-					Оставьте заявку, либо звоните, мы пообщаемся и <br> рассчитаем
-					для Вас приблизительную стоимость <br> реализации проекта: +7
-					(347) 262-70-20
-				</p>
-			</div>
-			<div>
-				<form>
-					<input class='name' type='name' placeholder='Имя' />
-					<input class='phone' type='phone' placeholder='Телефон' />
-					<input class='company' type='text' placeholder='Компания' />
-					<input class='email' type='email' placeholder='E-mail' />
-					<textarea class='details' type='details' placeholder='Детали проекта'></textarea>
-					<div class="formBtn">
+      	</section>
+      	<section class="blockForms" id="blockForm">
+			<div class="imgBack">
+				<div class="blockForm container">
+					<div>
+						<h1>Рассчитать <br> стоимость</h1>
 						<p>
-							Нажимая на кнопку, вы даете согласие на обработку персональных
-							данных и соглашаетесь с политикой конфиденциальности
+							Оставьте заявку, либо звоните, мы пообщаемся и <br> рассчитаем
+							для Вас приблизительную стоимость <br> реализации проекта: +7
+							(347) 262-70-20
 						</p>
-						<button class='redButton' type='button'>
-							Отправить
-						</button>
 					</div>
-				</form>
+					<div>
+						<form>
+							<input class='name' type='name' placeholder='Имя' />
+							<input class='phone' type='phone' placeholder='Телефон' />
+							<input class='company' type='text' placeholder='Компания' />
+							<input class='email' type='email' placeholder='E-mail' />
+							<textarea class='details' type='details' placeholder='Детали проекта'></textarea>
+							<div class="formBtn">
+								<p>
+									Нажимая на кнопку, вы даете согласие на обработку персональных
+									данных и соглашаетесь с политикой конфиденциальности
+								</p>
+								<button class='redButton' type='button'>
+									Отправить
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>	
       	</section>
-      	<section class="partner">
+      	<section class="partner container">
 			<h1 class="title">Рестораны уже с нами</h1>
 			<div>
           		<img src="./img/Frame.png" alt="gedza" />
@@ -174,7 +178,7 @@
 			</div>
       </section>
       </main>
-      <footer>
+      <footer class="container">
         <div class="footerBlock">
 			<div class="footContacts">
 					<div>
@@ -189,12 +193,12 @@
 						<h3>info@ambity.ru</h3>
 						<h3>г. Уфа, ул. Пр. Октября, д. 2</h3>
 						<div class='contactsBtn'>
-							<button>
+							<a>
 								<img src="./img/vk.png" />
-							</button>
-							<button>
+							</a>
+							<a>
 								<img src="img/tg.png" />
-							</button>
+							</a>
 						</div>
 					</div>
 			</div>

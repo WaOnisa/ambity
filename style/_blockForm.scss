@@ -1,12 +1,17 @@
-.blockForm{
+.blockForms{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.imgBack{
     background: url("../img/pic.png") no-repeat center center;
     background-size: cover;
+}
+.blockForm{
     padding-bottom: 100px;
     padding-top: 100px;
     display: flex;
     flex-direction: row;
-    margin-top: 75px;
-    margin-bottom: 75px;
+    justify-content: space-between;
     div:first-child { 
         display: flex;
         gap: 20px;  
@@ -32,7 +37,7 @@
         display: flex;
         flex-flow: column wrap;
         width: 500px;
-        gap: 18px;
+        gap: 30px;
         flex-direction: row;
         // display: grid;
         // gap: 18px;
@@ -45,13 +50,15 @@
                 weight: 500;
                 size: 18px;
             }
-            text-overflow: $colorGrayLight2;
-            border: 1px solid $colorGrayLight2;
+            border: 1px solid $colorForm;
             padding-left: 15px;
             padding-top: 10px;
             padding-bottom: 10px;
             padding-right: 7px;
             flex-grow: 1;
+        }
+        input::placeholder {
+            color: $colorGrayLight;
         }
         .details{
             font: {
@@ -59,12 +66,15 @@
                 weight: 500;
                 size: 18px;
             }
-            border: 1px solid $colorGrayLight2;
+            border: 1px solid $colorForm;
             padding-left: 15px;
             padding-top: 10px;
             padding-right: 7px;
             resize: none;
             flex-grow: 2;
+        }
+        .details::placeholder {
+            color: $colorGrayLight;
         }
         .formBtn{
             order: 4;
