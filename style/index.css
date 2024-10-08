@@ -200,11 +200,15 @@ h1, h2, h3, p {
 }
 
 .imgBack {
-  background: url("../img/pic.png") no-repeat center center;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .blockForm {
+  position: relative;
   padding-bottom: 100px;
   padding-top: 100px;
   display: flex;
