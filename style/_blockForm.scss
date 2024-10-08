@@ -2,14 +2,22 @@
     padding-top: 75px;
     padding-bottom: 75px;
 }
-.imgBack{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.formBlock{
+    position: relative;
+}
+.imgBack{ 
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 }
 .blockForm{
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
     padding-bottom: 100px;
     padding-top: 100px;
     display: flex;

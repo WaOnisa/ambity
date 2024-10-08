@@ -6,7 +6,7 @@
   font-family: "Manrope";
   src: url(./fonts/Manrope/Manrope.ttf);
 }
-.blockForm form .formBtn .redButton, footer .redButton, .quests .redButtonBlock .redButton {
+.blockForm form .formBtn .redButton, .footerBlocks .redButton, .quests .redButtonBlock .redButton {
   border: 4px solid #FF4A40;
   background-color: #ffffff;
   font-family: "Rising Sun";
@@ -114,48 +114,48 @@ main {
   height: 58px;
 }
 
-footer {
+.footerBlocks {
   padding-top: 75px;
   display: flex;
   gap: 120px;
   justify-content: space-around;
 }
-footer .footContacts {
+.footerBlocks .footContacts {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 150px;
 }
-footer .footContacts div:first-child {
+.footerBlocks .footContacts div:first-child {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: flex-start;
 }
-footer .footInf {
+.footerBlocks .footInf {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-footer h1 {
+.footerBlocks h1 {
   font-family: "Rising Sun";
   font-weight: 600;
   font-size: 42px;
   font-margin-bottom: 0px;
 }
-footer h2 {
+.footerBlocks h2 {
   font-family: "Rising Sun";
   font-weight: 500;
   font-size: 32px;
   font-margin-bottom: 0px;
 }
-footer h3 {
+.footerBlocks h3 {
   font-family: "Rising Sun";
   font-weight: 500;
   font-size: 24px;
   font-margin-bottom: 0px;
 }
-footer p {
+.footerBlocks p {
   font-family: "Rising Sun";
   font-size: 18px;
   font-weight: 400;
@@ -199,16 +199,23 @@ h1, h2, h3, p {
   padding-bottom: 75px;
 }
 
-.imgBack {
+.formBlock {
+  position: relative;
+}
+
+.imgBack img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
-  position: absolute;
 }
 
 .blockForm {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
   padding-bottom: 100px;
   padding-top: 100px;
   display: flex;
