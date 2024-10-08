@@ -1,5 +1,7 @@
-.footerBlocks{
+footer{
     padding-top: 75px;
+}
+.footerBlocks{
     display: flex;
     gap: 120px;
     justify-content: space-around;
@@ -9,8 +11,6 @@
         justify-content: space-between;
         gap: 150px;
 
-      
-        
         div:first-child{
         display: flex;
         flex-direction: column;

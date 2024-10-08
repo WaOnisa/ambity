@@ -6,6 +6,12 @@
     position: relative;
 }
 .imgBack{ 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
     img{
         object-fit: cover;
         width: 100%;
@@ -13,10 +19,6 @@
     }
 }
 .blockForm{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 100%;
     padding-bottom: 100px;
     padding-top: 100px;

@@ -1,10 +1,13 @@
+.quests{
+    padding: 75px 0px;
+}
 
-.quests {
+.quest {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 85px;
-    padding: 75px 60px 75px 60px;
+    padding: 0px 60px;
     .redButtonBlock{
         display: flex;
         justify-content: center;
